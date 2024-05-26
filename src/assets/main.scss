@@ -20,5 +20,15 @@ body {
   }
 }
 
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
 
-@import './blocks/header', './blocks/character-showcase', './blocks/characterCard', './blocks/pagination', './blocks/modal';
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+@import './blocks/header', './blocks/character-showcase', './blocks/characterCard',
+  './blocks/pagination', './blocks/modal';

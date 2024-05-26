@@ -13,7 +13,10 @@ const changeModalVisibility = () => {
 
 <template>
   <div class="containter">
-    <Modal :modal-visible="modalVisible" @change-modal-visibility="changeModalVisibility" />
+    <transition name="fade">
+      <Modal :modal-visible="modalVisible" @change-modal-visibility="changeModalVisibility" />
+    </transition>
+
     <header-comp />
     <character-showcase
       :modal-visible="modalVisible"

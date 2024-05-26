@@ -131,16 +131,18 @@ getCharacterData()
     </section>
     <section>
       <div class="characterWrapper">
-        <character-card
-          v-for="(person, index) in characters"
-          :key="person.id"
-          :name="person.name"
-          :status="person.status"
-          :img="person.image"
-          :species="person.species"
-          :location="person.location.name"
-          :first-seen="characters.firstSeen[index]"
-        />
+        <transition-group name="fade">
+          <character-card
+            v-for="(person, index) in characters"
+            :key="person.id"
+            :name="person.name"
+            :status="person.status"
+            :img="person.image"
+            :species="person.species"
+            :location="person.location.name"
+            :first-seen="characters.firstSeen[index]"
+          />
+        </transition-group>
       </div>
       <Pagination
         @go-to-first-page="goToFirstPage()"

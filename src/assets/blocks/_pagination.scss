@@ -1,0 +1,95 @@
+.paginationWrapper {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  margin: 15px 0;
+
+  .pagination__centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .pagination__el__active {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 50px;
+      background: rgb(60, 62, 68);
+      border: 2px solid rgb(255, 152, 0);
+      color: rgb(255, 152, 0);
+      border-radius: 12px;
+      &:hover {
+        cursor: not-allowed;
+        background: darken(rgb(60, 62, 68), 10%);
+      }
+    }
+
+    .pagination__el {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 50px;
+      color: rgb(245, 245, 245);
+      background: rgb(60, 62, 68);
+      border: 2px solid rgb(85, 204, 68);
+      border-radius: 12px;
+      margin: 0 15px;
+
+      &:hover {
+        cursor: pointer;
+        background: lighten(rgb(60, 62, 68), 20%);
+      }
+    }
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+
+    &:not(:last-child, :first-child) {
+      margin: 0 15;
+    }
+
+    .pagination__divider {
+      color: rgb(85, 204, 68);
+      font-size: 2rem;
+    }
+
+    .pagination__el__active {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 50px;
+      background: rgb(60, 62, 68);
+      border: 2px solid rgb(255, 152, 0);
+      color: rgb(255, 152, 0);
+      border-radius: 12px;
+      &:hover {
+        cursor: not-allowed;
+        background: darken(rgb(60, 62, 68), 10%);
+      }
+    }
+
+    .pagination__el {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 50px;
+      color: rgb(245, 245, 245);
+      background: rgb(60, 62, 68);
+      border: 2px solid rgb(85, 204, 68);
+      border-radius: 12px;
+
+      &:hover {
+        cursor: pointer;
+        background: lighten(rgb(60, 62, 68), 20%);
+      }
+    }
+  }
+}

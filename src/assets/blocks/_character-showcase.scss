@@ -1,0 +1,58 @@
+.characterWrapper {
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1920px;
+  @media (max-width: 1270px) {
+    flex-direction: column;
+  }
+}
+
+.filterWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  margin-top: 15px;
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+    margin-top: 5px;
+  }
+
+  .filterSelect,
+  .filterButton,
+  .filterInput {
+    font-size: 16px;
+    outline: none;
+    height: 100%;
+    border: 2px solid rgb(85, 204, 68);
+    border-radius: 12px;
+    background: rgb(158, 158, 158);
+    color: rgb(245, 245, 245);
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+
+    @media (max-width: 650px) {
+      width: 70%;
+      margin-top: 5px;
+      text-align: center;
+
+      &:not(:first-child) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .filterInput {
+    padding-left: 5px;
+
+    &::placeholder,
+    &:disabled {
+      color: rgb(245, 245, 245);
+    }
+  }
+}

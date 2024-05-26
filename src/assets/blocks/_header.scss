@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  @media (max-width: 650px) {
+    margin-bottom: 40px;
+  }
+
+  .headerText {
+    font-size: 25px;
+    font-style: sans-serif;
+    color: white;
+  }
+}

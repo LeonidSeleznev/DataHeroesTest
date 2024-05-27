@@ -168,6 +168,7 @@ body {
 }
 @media (max-width: 650px) {
   .filterWrapper {
+    height: 100px;
     flex-direction: column;
     margin-top: 5px;
   }
@@ -203,6 +204,7 @@ body {
   }
 }
 .filterWrapper .filterInput {
+  padding: 0;
   padding-left: 5px;
 }
 .filterWrapper .filterInput::-moz-placeholder {
